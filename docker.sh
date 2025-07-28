@@ -11,4 +11,4 @@ dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.r
 dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 systemctl start docker
 systemctl enable docker
-usermod -a -G docker ec2-user
+usermod -aG docker ec2-user
